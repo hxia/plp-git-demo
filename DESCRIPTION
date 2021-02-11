@@ -1,0 +1,92 @@
+Package: PatientLevelPrediction
+Type: Package
+Title: Package for patient level prediction using data in the OMOP Common Data
+    Model
+Version: 4.1.0
+Date: 2020-09-01
+Authors@R: c(
+    person("Jenna", "Reps", email = "jreps@its.jnj.com", role = c("aut", "cre")),
+    person("Martijn", "Schuemie", role = c("aut")),
+    person("Marc", "Suchard", role = c("aut")),
+    person("Patrick", "Ryan", role = c("aut")),
+    person("Peter", "Rijnbeek", role = c("aut"))
+    )
+Maintainer: Jenna Reps <jreps@its.jnj.com>
+Description: A package for creating patient level prediction models. Given a
+    cohort of interest and an outcome of interest, the package can use data in the
+    OMOP Common Data Model to build a large set of features. These features can then
+    be assessed to fit a predictive model using a number of machine learning algorithms.
+    Several performance measures are implemented for model evaluation.
+License: Apache License 2.0
+URL: https://ohdsi.github.io/PatientLevelPrediction, https://github.com/OHDSI/PatientLevelPrediction
+BugReports: https://github.com/OHDSI/PatientLevelPrediction/issues
+Depends:
+    R (>= 3.3.0),
+    DatabaseConnector (>= 3.0.0),
+    FeatureExtraction (>= 3.0.0),
+    Cyclops (>= 3.0.0)
+Imports:
+    ggplot2,
+    gridExtra,
+    PRROC,
+    magrittr,
+    foreach,
+    doParallel,
+    dplyr,
+    bit,
+    Andromeda,
+    plyr,
+    survAUC,
+    Rcpp (>= 0.11.2),
+    SqlRender (>= 1.1.3),
+    survival,
+    xgboost,
+    Matrix,
+    AUC,
+    utils,
+    methods,
+    reshape2,
+    officer,
+    diagram,
+    tidyr,
+    viridisLite,
+    RCurl,
+    RJSONIO,
+    keras,
+    slam,
+    ParallelLogger (>= 2.0.0),
+    reticulate (> 1.6),
+    tools,
+    plotly,
+    zeallot,
+    htmltools,
+    tensorflow,
+    benchmarkme,
+    cowplot
+Suggests:
+    shiny,
+    DT,
+    htmlwidgets (> 0.8),
+    shinydashboard,
+    shinycssloaders,
+    testthat,
+    pROC,
+    gnm,
+    knitr,
+    rmarkdown,
+    scoring,
+    Metrics,
+    SparseM,
+    ResourceSelection,
+    BigKnn (>= 1.0.0),
+    aws.s3,
+    devtools,
+    rms,
+    survminer
+Remotes:
+    ohdsi/FeatureExtraction,
+    ohdsi/BigKnn
+LinkingTo: Rcpp
+NeedsCompilation: yes
+RoxygenNote: 7.1.1
+Encoding: UTF-8
