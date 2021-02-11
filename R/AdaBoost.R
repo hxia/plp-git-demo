@@ -42,6 +42,7 @@ setAdaBoost <- function(nEstimators = 50, learningRate = 1, seed = NULL) {
   if (min(learningRate) < 0)
     stop("learningRate must be a numeric value >0")
 
+  
   # test python is available and the required dependancies are there:
   ##checkPython()
 
