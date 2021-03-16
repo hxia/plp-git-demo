@@ -45,3 +45,4 @@ viewPlps <- function(result, validation=NULL){
   on.exit(rm(shinySettings, envir = .GlobalEnv))
   shiny::runApp(appDir) 
 }
+
